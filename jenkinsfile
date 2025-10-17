@@ -24,6 +24,7 @@ pipeline {
     stage('test'){
         steps {
             echo "test stage"
+            ls -l Build | grep index.html
         }
     }
 }
